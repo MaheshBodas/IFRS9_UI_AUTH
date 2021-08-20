@@ -1,0 +1,128 @@
+.
+├── app
+│   ├── base
+│   │   ├── forms.py
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── routes.py
+│   │   ├── templates
+│   │   │   ├── accounts
+│   │   │   │   ├── login.html
+│   │   │   │   └── register.html
+│   │   │   ├── includes
+│   │   │   │   ├── footer.html
+│   │   │   │   ├── navigation.html
+│   │   │   │   ├── scripts.html
+│   │   │   │   ├── settings-box.html
+│   │   │   │   └── sidebar.html
+│   │   │   └── layouts
+│   │   │       ├── base-fullscreen.html
+│   │   │       └── base.html
+│   │   └── util.py
+│   ├── home
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │   └── templates
+│   │       ├── bootstrap-tables.html
+│   │       ├── dashboard.html
+│   │       ├── forgot-password.html
+│   │       ├── index.html
+│   │       ├── lock.html
+│   │       ├── page-403.html
+│   │       ├── page-404.html
+│   │       ├── page-500.html
+│   │       ├── reset-password.html
+│   │       ├── settings.html
+│   │       ├── sign-in.html
+│   │       ├── sign-up.html
+│   │       ├── transactions.html
+│   │       ├── ui-buttons.html
+│   │       ├── ui-forms.html
+│   │       ├── ui-modals.html
+│   │       ├── ui-notifications.html
+│   │       └── ui-typography.html
+│   └── __init__.py
+├── CHANGELOG.md
+├── config.py
+├── db.sqlite3
+├── docker-compose.yml
+├── Dockerfile
+├── gunicorn-cfg.py
+├── LICENSE.md
+├── nginx
+│   └── appseed-app.conf
+├── package.json
+├── Procfile
+├── README.md
+├── requirements-mysql.txt
+├── requirements-pgsql.txt
+├── requirements.txt
+├── run.py
+├── runtime.txt
+└── tree_list.txt
+
+9 directories, 52 files
+.
+├── app
+│   ├── base
+│   │   ├── forms.py
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── routes.py
+│   │   ├── templates
+│   │   │   ├── accounts
+│   │   │   │   ├── login.html
+│   │   │   │   └── register.html
+│   │   │   ├── includes
+│   │   │   │   ├── footer.html
+│   │   │   │   ├── navigation.html
+│   │   │   │   ├── scripts.html
+│   │   │   │   ├── settings-box.html
+│   │   │   │   └── sidebar.html
+│   │   │   └── layouts
+│   │   │       ├── base-fullscreen.html
+│   │   │       └── base.html
+│   │   └── util.py
+│   ├── home
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │   └── templates
+│   │       ├── bootstrap-tables.html
+│   │       ├── dashboard.html
+│   │       ├── forgot-password.html
+│   │       ├── index.html
+│   │       ├── lock.html
+│   │       ├── page-403.html
+│   │       ├── page-404.html
+│   │       ├── page-500.html
+│   │       ├── reset-password.html
+│   │       ├── settings.html
+│   │       ├── sign-in.html
+│   │       ├── sign-up.html
+│   │       ├── transactions.html
+│   │       ├── ui-buttons.html
+│   │       ├── ui-forms.html
+│   │       ├── ui-modals.html
+│   │       ├── ui-notifications.html
+│   │       └── ui-typography.html
+│   └── __init__.py
+├── CHANGELOG.md
+├── config.py
+├── db.sqlite3
+├── docker-compose.yml
+├── Dockerfile
+├── gunicorn-cfg.py
+├── LICENSE.md
+├── nginx
+│   └── appseed-app.conf
+├── package.json
+├── Procfile
+├── README.md
+├── requirements-mysql.txt
+├── requirements-pgsql.txt
+├── requirements.txt
+├── run.py
+├── runtime.txt
+└── tree_list.txt
+
+9 directories, 52 files

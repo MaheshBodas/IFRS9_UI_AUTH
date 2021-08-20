@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title><TAB TITLE></title>
+    <link rel="shortcut icon" href="<APP_ID>/assets/favicon.ico"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+
+
+	<link rel="stylesheet" type="text/css" href="<APP_ID>/assets/util.css">
+	<link rel="stylesheet" type="text/css" href="<APP_ID>/assets/main.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css" integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="<APP_ID>/assets/TNP_Standard.css"><!--===============================================================================================-->
+</head>
+
+{% block body %}
+<body>
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" method="post">
+
+					<div id="logon-img">
+						<img src="<APP_ID>/assets/TNP-Logo_no background.png" width="300px">
+					</div>
+
+					<div id="log-in-body">
+						<H3 id="login-app-title"><APPLICATION_NAME></H3>
+
+						<span class="login100-form-title p-b-34">
+							Application Login
+						</span>
+
+						<span id="form_body">
+							<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" id="id_input" data-validate="Type user name">
+								<input id="first-name" class="input100"
+										name="username" type="text" placeholder="Username" value="{{request.form.username }}">
+								<span class="focus-input100"></span>
+							</div>
+							<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" id="password_input" data-validate="Type password">
+								<input class="input100"
+										type="password" placeholder="Enter password" name="password">
+								<span class="focus-input100"></span>
+							</div>
+
+							<div class="container-login100-form-btn">
+								<button class="btn btn-primary login100-form-btn">
+									Login
+								</button>
+							</div>
+						</span>
+					</div>
+					{% with messages = get_flashed_messages() %}
+						{% if messages %}
+							{% for message in messages %}
+								{% if 'success' in message %}
+									<h2 id=pwd-change-success>{{ message }}</h2>
+								{% elif 'Please log in to access' in message %}
+
+								{% elif 'You have logged out' in message %}
+
+								{% else %}
+									<div id="error-row" class="row">
+										<div id="login-alert">
+											<div class="alert alert-dismissible alert-danger">
+												<button type="button" class="close" data-dismiss="alert">&times;</button>
+												<h6 id=wrong-password>{{ message }}</h6>
+											</div>
+										</div>
+									</div>
+								{% endif %}
+							{% endfor %}
+						{% endif %}
+					{% endwith %}
+
+
+
+				</form>
+
+				<div class="login100-more" style="background-image: url('<APP_ID>/assets/Lighthouse.jpg');"></div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+
+</body>
+{% endblock %}
+</html>

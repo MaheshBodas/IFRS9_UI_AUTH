@@ -1,0 +1,35 @@
+#ista-set-up{
+    overflow-y: auto;
+}
+
+.toggle_col
+{
+    text-align: right !important;
+}
+
+.text_box_after_tree{
+    margin-top: 20px;
+}
+
+.sub-tree
+{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+#{index:0,type:tags}
+{
+        height: 143px;
+}
+
+input[type=radio]
+{
+        margin-right: 10px;
+}
+
+label{
+    font-size: 16px;
+    margin-left: 10px
+}
+
+
